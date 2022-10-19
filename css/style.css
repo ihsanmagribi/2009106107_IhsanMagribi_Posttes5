@@ -1,0 +1,99 @@
+/*----------------------------Header-------------------------------------------------*/
+.navbar{
+    margin: 10px;
+    background-color:#eacc35;
+    height: 90px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+.navbar-logo {
+    font-size: 30px;
+    color: #02921f;
+    float: left;
+    padding: 8px;
+}
+.navbar-list li {
+    font-size: 18px;
+    float: right;
+    margin: 30px;
+    padding-right:20px;
+}
+
+li{
+    float: right;
+    list-style:none;
+}
+
+.logo-navbar{
+    float: left;
+    margin: 5px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    }
+
+li a{
+    display: block;
+    color: #02921f;
+    text-align: center;
+    padding-bottom: 30px; 
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    color:white;
+}
+/*---------------------------------Main------------------------------------------------*/
+.main{
+    padding: 10px 10px;
+}
+.section-title{
+    font-size: 28px;
+    border-bottom: 2px solid #dee7ed;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.contents{
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+.contents-item {
+    float: left;
+    margin-right: 40px;
+}
+.contents-item p{
+    position: center;
+    font-size: 24px;
+    margin-top: 30px;
+}
+/*-----------------------------------Foter---------------------------------------------*/
+.footer{
+    margin-top: 100px;
+    background-color: #eacc35;
+    color: #fff;
+    height: 120px;
+    padding: 80px;
+}
+
+.footer-jargon{
+    font-size:32px;
+    float: left;
+}
+.footer-alamat{
+    font-size:32px;
+    float: left;
+}
+.footer-medsos{  
+    font-size: 30px;
+    float: right;
+    padding: 10px;
+}

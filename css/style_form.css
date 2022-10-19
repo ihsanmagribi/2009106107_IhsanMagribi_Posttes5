@@ -1,0 +1,152 @@
+/*----------------------------Header-------------------------------------------------*/
+.navbar{
+    margin: 10px;
+    background-color:#eacc35;
+    height: 90px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+.navbar-logo {
+    font-size: 30px;
+    color: #02921f;
+    float: left;
+    padding: 8px;
+}
+.navbar-list li {
+    font-size: 18px;
+    float: right;
+    margin: 30px;
+    padding-right:20px;
+}
+
+li{
+    float: right;
+    list-style:none;
+}
+
+.logo-navbar{
+    float: left;
+    margin: 5px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    }
+
+li a{
+    display: block;
+    color: #02921f;
+    text-align: center;
+    padding-bottom: 30px; 
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    color:white;
+}
+/*-----------------------------------------FORM---------------------------------------------*/
+.form{
+    width: 1106px;
+    background-color: #fff;
+    position: fixed;
+    margin-left: 142px;
+   text-align: center;
+   top: 122px;
+   color: #25476a;
+}
+
+
+.judul{
+   color: green;
+   font-weight: 900;
+   text-align: center;
+   margin-top: 26px;
+   font-size: 26px;
+
+}
+
+table{
+   border-collapse : collapse;
+   margin-left: 25px;
+   margin-top: 25px;
+   font-size: 16px;
+   width: 900px;
+   margin: 2% auto;
+}
+table td{
+   padding: 5px 5px;
+}
+
+input, select, textarea{
+   width: 500px;
+   padding: 10px 15px;
+   border: 1px solid #ddd;
+   outline:none;
+   color: #25476a;
+   border-radius: 2px;
+}
+select{
+   width: 533px;
+   padding: 10px 15px;
+}
+
+button{
+   outline: none;
+   border: 1px solid #25476a;
+   padding: 10px 20px;
+   background: #25476a;
+   color: #fff;
+   border-radius: 2px;
+   cursor: pointer;
+   margin-right: 15px;
+}
+button:hover{
+   background: red;
+}
+/*-----------------------------------------FORM---------------------------------------------*/
+
+h1{
+	text-align: center;
+}
+
+.form{
+ 	width: 1106px;
+ 	background-color: #fff;
+ 	position: fixed;
+ 	margin-left: 142px;
+	text-align: center;
+	top: 122px;
+	color: black;
+}
+.judul{
+   color: green;
+   font-weight: 900;
+   text-align: center;
+   margin-top: 26px;
+   margin-bottom: 26px;
+   font-size: 26px;
+
+}
+
+table{
+   border-collapse : collapse;
+   margin-left: 25px;
+   margin-top: 25px;
+   font-size: 16px;
+   width: 900px;
+   margin: 2% auto;
+}
+table td{
+   padding: 5px 5px;
+}
+
+th, td {
+  border-bottom: 1px solid #DDD;
+}
