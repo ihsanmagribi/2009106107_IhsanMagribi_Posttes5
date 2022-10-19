@@ -33,7 +33,7 @@
             <input type="text" name="jabatan" class="form-text"><br>
 
             <label for="">Asal Pimpinan</label><br>
-            <select class="choose" name="asal_pimpinan">
+            <select class="form-text" name="asal_pimpinan" class="select">
                 <option value="Samarinda">Samarinda</option>
                 <option value="Balikpapan">Balikpapan</option>
                 <option value="Penajam Paser Utara">Penajam Paser Utara</option>
@@ -42,10 +42,11 @@
                 <option value="Paser">Paser</option>
                 <option value="Bontang">Bontang</option>
                 <option value="Kutai Timur">Kutai Timur</option>
-            </select>
-            <label for="">Alamat</label><br>
-            <textarea name="alamat" id="" cols="50" rows="50"></textarea><br>
+            </select>   
             
+            <label for="">Alamat</label><br>
+            <textarea name="alamat" id="" cols="135" rows="5" class="form-text"></textarea><br>
+
             <input type="submit" name="submit" value="Kirim" class="btn-submit">
         
         </form>
