@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seputar PW IPM KALTIM</title>
+    <title>PW IPM KALTIM</title>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="darkmode.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -17,8 +17,8 @@
         <div class="navbar-list">
             <ul>
                 <li><button onclick="myFunction()">dark mode</button></li>
-                <li><a href="index.html" onclick=""><i class="home"></i>Home</a></li>
-                <li><a href="profil.html" onclick=""><i class="profil"></i>Profil IPM KALTIM</a></li>
+                <li><a href="index.php" onclick=""><i class="home"></i>Home</a></li>
+                <li><a href="profil.php" onclick=""><i class="profil"></i>Profil IPM KALTIM</a></li>
             </ul>
         </div>
     </div>

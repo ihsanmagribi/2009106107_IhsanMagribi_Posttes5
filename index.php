@@ -17,8 +17,8 @@
             <ul>
                 <li><button onclick="myFunction()">dark mode</button></li>
                 <li><a href="form_data_anggota.php" onclick=""><i class="form"></i>FORM</a></li>
-                <li><a href="profil.html" onclick=""><i class="profil"></i>Profil IPM KALTIM</a></li>
-                <li><a href="seputaripm.html" onclick=""><i class="seputar"></i>Seputar IPM KALTIM</a></li>
+                <li><a href="profil.php" onclick=""><i class="profil"></i>Profil IPM KALTIM</a></li>
+                <li><a href="seputaripm.php" onclick=""><i class="seputar"></i>Seputar IPM KALTIM</a></li>
             </ul>
         </div>
     </div>

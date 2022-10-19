@@ -1,69 +1,75 @@
+<?php 
+    require 'config.php';
+
+    $result = mysqli_query($db, "SELECT * FROM mahasiswa");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KONFIRMASI</title>
-    <link rel="stylesheet" href="css/style_form.css">
-    <script type="text/javascript" src="darkmode.js"></script>
-    <link rel="icon" href="https://ipmboyolali.com/uploads/cover_blog/lambang_ipm.jpg">
-</head>
-<body>
-    <div class="navbar">
-        <img width="50" height="80" src="image/Logo_IPM.png" class="logo-navbar">
-        <div class="navbar-logo">IKATAN PELAJAR MUHAMMADIYAH<br>KALIMANTAN TIMUR</div>
-        <div class="navbar-list">
-            <ul>
-                <li><button onclick="myFunction()">dark mode</button></li>
-                <li><a href="index.html" onclick=""><i class="home"></i>Home</a></li>
-                <li><a href="profil.html" onclick=""><i class="profil"></i>Profil IPM KALTIM</a></li>
-                <li><a href="seputaripm.html" onclick=""><i class="seputar"></i>Seputar IPM KALTIM</a></li>
-                </ul>
-            </div>
-    </div>
-    <?php if(isset($_POST['simpan'])){?>
-        <div class="form">
-        <p class="judul" >DATA ANDA BERHASIL DISIMPAN</p>
-       <table>
-       <tr>
-            <td><h3>Nama</h3</td>
-            <td>
-                <h3 id="nama" class="data"><?php echo $_POST['Nama'] ?></h3>
-            </td>
-        </tr>
-        <tr>
-            <td><h3>Tanggal Lahir</h3></td>
-            <td>
-                <h3 id="TanggalLahir" class="data"><?php echo $_POST['TanggalLahir'] ?></h3>
-            </td>
-        </tr>
-        <tr>
-            <td><h3>Nomor HP</h3></td>
-            <td>
-                <h3 id="NomorHP" class="data"><?php echo $_POST['NomorHP'] ?></h3>
-            </td>
-        </tr>
-        <tr>
-            <td><h3>Jabatan</h3></td>
-            <td>
-                <h3 id="Jabatan" class="data"><?php echo $_POST['Jabatan'] ?></h3>
-            </td>
-        </tr>
-        <tr>
-            <td><h3>Asal Pimpinan Daerah</h3></td>
-            <td>
-                <h3 id="Asal" class="data"><?php echo $_POST['Asal'] ?></h3>
-            </td>
-        </tr>
-        <tr>
-            <td><h3>Pengkaderan Terakhir</h3></td>
-            <td>
-                <h3 id="TM" class="data"><?php echo $_POST['TM'] ?></h3>
-            </td>
-        </tr>
-       </table>
-       </div>
-    <?php } ?>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PW IPM KALTIM</title>
+        <link rel="icon" href="https://ipmboyolali.com/uploads/cover_blog/lambang_ipm.jpg">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h2>Sistem Informasi Akademik Unmul</h2>
+        </header>
+
+        <div class="list-table">
+            <h3>Daftar Mahasiswa Informatika</h3>
+            <a href="form_data_anggota.php" class="tambah">Tambah Mahasiswa</a>
+            <table>
+                <tr class="thead">
+                    <th>No</th>
+                    <th nowrap>Nama Lengkap</th>
+                    <th>NIM</th>
+                    <th>Email</th>
+                    <th>No Telpon</th>
+                    <th>Alamat</th>
+                    <th colspan="2">Actions</th>
+                </tr>
+
+                <?php 
+                    $i = 1;
+                    while($row = mysqli_fetch_array($result)){
+
+                ?>
+
+                <tr>
+                    <td><?=$i;?></td>
+                    <td nowrap><?=$row['nama']?></td>
+                    <td><?=$row['nim']?></td>
+                    <td><?=$row['email']?></td>
+                    <td><?=$row['telpon']?></td>
+                    <td><?=$row['alamat']?></td>
+                    <td><?=$row['alamat']?></td>
+                    <td class="edit">
+                        <a href="edit.php?id=<?=$row['id'];?>">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </a>
+                    </td>
+                    <td class="hapus">
+                        <a href="hapus.php?id=<?=$row['id'];?>">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                            </svg>
+                        </a>
+                    </td>
+                </tr>
+                
+                <?php
+                    $i++; 
+                        }
+                ?>
+
+            </table>
+        </div>
+        
+    </body>
 </html>
