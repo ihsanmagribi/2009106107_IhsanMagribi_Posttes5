@@ -38,7 +38,7 @@
     </header>
     
     <div class="form-class">
-        <h3>Edit Data Mahasiswa</h3>
+        <h3>Edit Data Anggota</h3>
         <form action="tambah.php" method="POST">
             <table border = "0">
                 <tr>
