@@ -12,15 +12,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PW IPM KALTIM</title>
         <link rel="icon" href="https://ipmboyolali.com/uploads/cover_blog/lambang_ipm.jpg">
-        <link rel="stylesheet" href="css/style_form.css">
+        <link rel="stylesheet" href="css/ss.css">
     </head>
     <body>
         <header>
-            <h2>Sistem Informasi Akademik Unmul</h2>
+            <h2>PIMPINAN WILAYAH IPM KALTIM</h2>
         </header>
 
         <div class="list-table">
-            <h3>Daftar Mahasiswa Informatika</h3>
+            <h3>Data Anggota PW IPM KALTIM</h3>
             <a href="form_data_anggota.php" class="tambah">Tambah Mahasiswa</a>
             <table>
                 <tr class="thead">
