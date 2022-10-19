@@ -2,20 +2,20 @@
 
 require 'config.php';
 
-if(isset($_POST['submit'])){
+if(isset($_POST['simpan'])){
     $nama = $_POST['nama'];
     $email = $_POST['email'];
     $tanggal_lahir = $_POST['tanggal_lahir'];
     $nohp = $_POST['nohp'];
     $jabatan = $_POST['jabatan'];
     $asal_pimpinan = $_POST['asal_pimpinan'];
-    $alamat = $_POST['alamat'];
+    $tm = $_POST['tm'];
 
-    $kirim = mysqli_query($db, "INSERT INTO mahasiswa (nama,nim,email,telpon,alamat) VALUES ('$nama','$email','$tanggal_lahir','$nohp','$jabatan','$asal_pimpinan','$alamat')");
+    $kirim = mysqli_query($db, "INSERT INTO crud (nama,email,tanggal_lahir,nohp,jabatan,asal_pimpinan,tm) VALUES ('$nama','$email','$tanggal_lahir','$nohp','$jabatan','$asal_pimpinan','$tm')");
 
     if($kirim){
         // echo "<script> alert('Data Berhasil Dikirim');</script>";
-        header("Location:index.php");
+        header("Location:tampil_data.php");
     }else {
         echo "gagal mengirim";
     }

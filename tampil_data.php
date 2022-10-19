@@ -1,7 +1,7 @@
 <?php 
     require 'config.php';
 
-    $result = mysqli_query($db, "SELECT * FROM mahasiswa");
+    $result = mysqli_query($db, "SELECT * FROM crud");
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PW IPM KALTIM</title>
         <link rel="icon" href="https://ipmboyolali.com/uploads/cover_blog/lambang_ipm.jpg">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style_form.css">
     </head>
     <body>
         <header>
@@ -26,10 +26,12 @@
                 <tr class="thead">
                     <th>No</th>
                     <th nowrap>Nama Lengkap</th>
-                    <th>NIM</th>
                     <th>Email</th>
+                    <th>Tanggal Lahir</th>
                     <th>No Telpon</th>
-                    <th>Alamat</th>
+                    <th>Jabatan</th>
+                    <th>Asal Pimpinan</th>
+                    <th>TM</th>
                     <th colspan="2">Actions</th>
                 </tr>
 
@@ -42,11 +44,12 @@
                 <tr>
                     <td><?=$i;?></td>
                     <td nowrap><?=$row['nama']?></td>
-                    <td><?=$row['nim']?></td>
                     <td><?=$row['email']?></td>
-                    <td><?=$row['telpon']?></td>
-                    <td><?=$row['alamat']?></td>
-                    <td><?=$row['alamat']?></td>
+                    <td><?=$row['tanggal_lahir']?></td>
+                    <td><?=$row['nohp']?></td>
+                    <td><?=$row['jabatan']?></td>
+                    <td><?=$row['asal_pimpinan']?></td>
+                    <td><?=$row['tm']?></td>
                     <td class="edit">
                         <a href="edit.php?id=<?=$row['id'];?>">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
