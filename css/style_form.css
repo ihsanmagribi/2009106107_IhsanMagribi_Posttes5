@@ -115,6 +115,9 @@ button:hover{
 h1{
   text-align: center;
 }
+form-class h3{
+  text-align: center;
+}
 
 .form{
    width: 1106px;

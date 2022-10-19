@@ -33,13 +33,21 @@
     <link rel="stylesheet" href="css/style_form.css">
 </head>
 <body>
-    <header>
-        <h2></h2>
-    </header>
-    
+    <div class="navbar">
+        <img width="50" height="80" src="image/Logo_IPM.png" class="logo-navbar">
+        <div class="navbar-logo">IKATAN PELAJAR MUHAMMADIYAH<br>KALIMANTAN TIMUR</div>
+        <div class="navbar-list">
+            <ul>
+                <li><button onclick="myFunction()">dark mode</button></li>
+                <li><a href="index.php" onclick=""><i class="home"></i>Home</a></li>
+                <li><a href="profil.php" onclick=""><i class="profil"></i>Profil IPM KALTIM</a></li>
+                <li><a href="seputaripm.php" onclick=""><i class="seputar"></i>Seputar IPM KALTIM</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="form-class">
         <h3>Edit Data Anggota</h3>
-        <form action="tambah.php" method="POST">
+        <form action="" method="POST">
             <table border = "0">
                 <tr>
                     <td>Nama</td>
@@ -59,7 +67,7 @@
                 </tr>
                 <tr>
                     <td>Jabatan</td>
-                    <td><input type="text"  name="Jabatan" maxlength="50" placeholder="Jabatan Sekarang"  required></td>
+                    <td><input type="text"  name="jabatan" maxlength="50" placeholder="Jabatan Sekarang"  required></td>
                 </tr>
                 <tr>
                     <td>Asal Pimpinan Daerah</td>
@@ -95,7 +103,5 @@
         </table>
         </form>
     </div>
-    </div>
-
 </body>
 </html>

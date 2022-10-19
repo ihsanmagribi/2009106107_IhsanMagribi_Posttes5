@@ -97,21 +97,3 @@ table a {
     padding: 10px;
     border-radius: 10px;
 }
-
-.edit a {
-    background-color: orange;
-    color: white;
-}
-
-.hapus a {
-    background-color: red;
-    color: white;
-}
-
-.edit a:hover{
-    background-color: rgb(223, 145, 0);
-}
-
-.hapus a:hover {
-    background-color: rgb(179, 0, 0);
-}

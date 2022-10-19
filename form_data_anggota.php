@@ -44,7 +44,7 @@
                 </tr>
                 <tr>
                     <td>Jabatan</td>
-                    <td><input type="text"  name="Jabatan" maxlength="50" placeholder="Jabatan Sekarang"  required></td>
+                    <td><input type="text"  name="jabatan" maxlength="50" placeholder="Jabatan Sekarang"  required></td>
                 </tr>
                 <tr>
                     <td>Asal Pimpinan Daerah</td>
